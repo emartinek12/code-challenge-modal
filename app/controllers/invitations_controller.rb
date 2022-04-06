@@ -3,7 +3,7 @@ class InvitationsController < ApplicationController
     @invitation = Invitation.new(invitation_params)
 
     respond_to do |format|
-      format.html {}# { redirect_to root_path, notice: 'Invitation was successfully sent.' }
+      format.html { }# { redirect_to root_path, notice: 'Invitation was successfully sent.' }
       format.js { render :new}
      end
   end
