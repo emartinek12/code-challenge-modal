@@ -2,9 +2,9 @@
   <%= form_with model: @invitation do |f| %>
     <%= f.label :email, "Share cycle with a new Customer" %>
     <%= f.input :email, "Email Addresses..." %>
-    <%= f.label :text, "Want to include a message with the invite?" %>
-    <%= f.input :text, "Please enter your message..." %>
+    <%= f.label :message, "Want to include a message with the invite?" %>
+    <%= f.text_field :message, "Please enter your message..." %>
     <%= f.label :text, "You are about to share with the individuals above:" %>
-    <%= f.label :text, cycle.name %>
-    <%= f.submit, "Send Invitation" %>
+    <%= f.label :text, invitation.cycle %>
+    <%= f.submit "Send Invitation", class: 'modal__submit-button' %>
   <% end %>

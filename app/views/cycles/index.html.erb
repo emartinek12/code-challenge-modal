@@ -11,6 +11,6 @@
     <div class="modal__content" data-modal-target="content">
       <%= render  'new_invitation', invitation: @invitation %>
     </div>
-    <%= inline_svg_tag 'icon-close-2.svg', class: 'modal__close-button' %>
+    <%= inline_svg_tag 'icon-close-2.svg', class: 'modal__close-button', 'data-action': 'click->module#close' %>
   </div>
 </div>
